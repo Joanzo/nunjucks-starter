@@ -26,7 +26,7 @@ var utils = require('../utils/utils');
 
   exports.scripts = [
     srcDir + "/config.js",
-    srcDir + "/**/!(_context|config|main|*-helper)*.js",
+    srcDir + "/**/!(_context|config|main)*.js",
     srcDir + "/main.js",
     "!" + srcDir + "/_vendor/**"
   ];
@@ -46,17 +46,6 @@ var utils = require('../utils/utils');
 
   exports.themes = srcDir + "/**/*-theme.scss";
 
-/***********************************************
-*   Application template files
-************************************************/
-
-  /*
-    All template files in application.
-    Those should registered as handlebars partials
-    in order to use feature like includes or layouts
-  */
-
-  exports.templates = srcDir + "/**/*.hbs";
 
 /***********************************************
 *   Application page files
@@ -84,21 +73,6 @@ var utils = require('../utils/utils');
   exports.templates = templatesDir;
 
   exports.html = config.srcDir + '/**/*.{njk,json}';
-
-/***********************************************
-*   Application handlebars helpers files
-************************************************/
-
-  /*
-    Handlebars helpers files
-    Read more: http://handlebarsjs.com/block_helpers.html
-  */
-
-  exports.helpers = [
-    srcDir + "/**/*-helper.js",
-    rootDir + '/node_modules/handlebars-layouts/index.js',
-  ];
-
 
 
 /***********************************************

@@ -10,7 +10,6 @@ var utils = require('../utils/utils');
 
 module.exports.task = function(gulp, paths) {
   return gulp.src(paths.app.styles)
-    .pipe(concat('app.scss'))
     .pipe(
       sass({
         includePaths: [
