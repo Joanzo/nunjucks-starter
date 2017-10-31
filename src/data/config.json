@@ -1,7 +1,9 @@
 {
   "config": {
     "googleAnalyticsId" : "",
-    "themeTitle" : "Nunjucks Starter Template"
+    "themeTitle" : "Nunjucks Starter Template",
+    "header": "header-default.njk",
+    "sidebar": "sidebar-default.njk"
   },
   "paths": {
     "base": "/",

@@ -75,8 +75,6 @@ var npmDir = config.npmDir;
 ************************************************/
   exports.styles = [
     npmDir + '/font-awesome/css/font-awesome.css',
-    npmDir + '/bootstrap/dist/css/bootstrap.css',
-    npmDir + '/bootstrap/dist/css/bootstrap-theme.css',
     npmDir + '/jqvmap/dist/jqvmap.css',
     npmDir + '/animate.css/animate.css',
     npmDir + '/quill/quill.base.css',

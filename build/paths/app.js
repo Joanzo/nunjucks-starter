@@ -36,8 +36,7 @@ var utils = require('../utils/utils');
 ************************************************/
 
   exports.styles = [
-    srcDir + "/templates/_main.scss",
-    srcDir + "/**/!(_main|_variables|*-theme)*.scss",
+    srcDir + "/_css/_main.scss",
   ];
 
 /***********************************************

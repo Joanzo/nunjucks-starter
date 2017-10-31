@@ -10,6 +10,7 @@ var utils = require('../utils/utils');
 
 module.exports.task = function(gulp, paths) {
   return gulp.src(paths.app.styles)
+    .pipe(concat('app.css'))
     .pipe(
       sass({
         includePaths: [
@@ -23,6 +24,6 @@ module.exports.task = function(gulp, paths) {
       autoprefixer()
       .on('error', utils.handleErrors)
     )
-    .pipe(gulp.dest(config.destDir + '/assets/css'))
+    .pipe(gulp.dest(config.destDir + '/assets/css/'))
     .pipe(server.update());
 }
