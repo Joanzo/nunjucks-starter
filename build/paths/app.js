@@ -25,9 +25,8 @@ var utils = require('../utils/utils');
   */
 
   exports.scripts = [
-    srcDir + "/config.js",
+    srcDir + "/app/main.js",
     srcDir + "/**/!(_context|config|main)*.js",
-    srcDir + "/main.js",
     "!" + srcDir + "/_vendor/**"
   ];
 
@@ -36,7 +35,9 @@ var utils = require('../utils/utils');
 ************************************************/
 
   exports.styles = [
-    srcDir + "/_css/_main.scss",
+    srcDir + "/app/main.scss",
+    srcDir + "/app/components/**/*.scss",
+    srcDir + "/app/layouts/**/*.scss"
   ];
 
 /***********************************************
@@ -68,7 +69,7 @@ var utils = require('../utils/utils');
     such as <link> and <script> tags.
   */
 
-  var templatesDir  = utils.getDirectoriesRecursive(srcDir + '/templates');
+  var templatesDir  = utils.getDirectoriesRecursive(srcDir + '/app');
   exports.templates = templatesDir;
 
   exports.html = config.srcDir + '/**/*.{njk,json}';

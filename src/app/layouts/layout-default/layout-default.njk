@@ -1,0 +1,25 @@
+{% extends config.layoutWrapper %}
+
+{% block body %}
+
+  <div class="main-wrapper">
+    <div class="app" id="app">
+
+      {% block header %}
+        {% include config.header %}
+      {% endblock %}
+
+      {% block sidebarPrimary %}
+        {% include config.sidebarPrimary %}
+      {% endblock %}
+
+      <div class="mobile-menu-handle"></div>
+
+      <article class="content {{pagename}}-page">
+        {% block content %}{% endblock %}
+      </article>
+
+    </div>
+  </div>
+
+{% endblock %}
