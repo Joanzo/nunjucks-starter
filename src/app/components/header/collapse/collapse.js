@@ -1,4 +1,4 @@
-component.collapseButton = function(el, options) {
+Component.CollapseButton = function(el, options) {
   var defaults = {
     openClass: 'sidebar-open'
   };

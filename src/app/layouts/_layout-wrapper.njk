@@ -58,6 +58,9 @@
       </script>
     {% endif %}
     <script src="{{paths.base}}/{{paths.js}}/vendor.js"></script>
+    {% if config.runtimeTemplates %}
+    <script src="{{paths.base}}/{{paths.js}}/templates.js"></script>
+    {% endif %}
     <script src="{{paths.base}}/{{paths.js}}/app.js"></script>
     {% block pageScript %}{% endblock %}
   </body>

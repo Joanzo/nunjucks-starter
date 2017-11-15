@@ -1,21 +1,10 @@
-var component = {};
+var Component = {};
 
-/*
-function Component(el, options, defaults) {
-  if (!(this instanceof Component)) {
-    // the constructor was called without "new".
-    return new Component(el, options);
-  }
-  this.el = el;
-  this.options = $.extend({}, defaults, options);
-}
-*/
-
-var app = function() {
+var App = function() {
 
   var config = {
-    dataComponent: "data-component",
-    dataOption: "data-options"
+    dataComponent: 'data-component',
+    dataOption: 'data-options'
   }
 
   // Wrap component name inside [data-component="componentName"]
@@ -33,14 +22,14 @@ var app = function() {
 
   var init = function() {
     // Load list of module inside component object and init
-    for (var key in component) {
+    for (var key in Component) {
 
       $(module(key)).each(function() {
         var el = $(this);
         var option = $(this).attr(config.dataOption);
         option = (option) ? JSON.parse(option) : null;
 
-        var obj = new component[key](el, option);
+        var obj = new Component[key](el, option);
 
         obj.init();
         el.data(key, obj);
@@ -48,7 +37,7 @@ var app = function() {
 
     }
 
-    $("body").addClass("loaded");
+    $('body').addClass('loaded');
     // end loading bar
     NProgress.done();
 
@@ -62,6 +51,6 @@ var app = function() {
 
 
 $(function() {
-  app.init();
+  App.init();
 });
 

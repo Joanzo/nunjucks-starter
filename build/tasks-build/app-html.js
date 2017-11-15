@@ -1,7 +1,6 @@
 var path = require('path');
 var renderTemplate = require('gulp-nunjucks-render');
 var data = require('gulp-data');
-var fs = require('fs');
 var mergeJSON = require('gulp-merge-json');
 var tap = require('gulp-tap');
 var runSequence = require('run-sequence');
@@ -14,6 +13,7 @@ var gulp =require('gulp');
 var paths = require('../paths');
 
 /*
+var fs = require('fs');
 var getData = function(file) {
   var dataPath = config.srcDir + '/data/config.json'
   return JSON.parse(fs.readFileSync(dataPath, 'utf8'))

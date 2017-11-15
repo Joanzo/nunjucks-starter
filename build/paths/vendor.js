@@ -65,7 +65,8 @@ var npmDir = config.npmDir;
     npmDir + '/sortablejs/Sortable.js',
     npmDir + '/jquery-sortablejs/jquery-sortable.js',
     npmDir + '/tether/dist/tether.js',
-    npmDir + '/tinycolor2/tinycolor.js'
+    npmDir + '/tinycolor2/tinycolor.js',
+    npmDir + '/nunjucks/browser/nunjucks-slim.js'
   ];
 
 

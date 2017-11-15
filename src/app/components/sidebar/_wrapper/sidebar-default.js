@@ -1,6 +1,6 @@
 
 
-component.overlay = function(el, options) {
+Component.Overlay = function(el, options) {
   var defaults = {};
   var options = $.extend({}, defaults, options);
   var el = el;
@@ -25,7 +25,7 @@ component.overlay = function(el, options) {
 
 };
 
-component.mobileSwipe = function(el, options) {
+Component.MobileSwipe = function(el, options) {
   var defaults = {};
   var options = $.extend({}, defaults, options);
   var el = el;

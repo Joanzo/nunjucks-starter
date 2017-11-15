@@ -31,6 +31,9 @@ gulp.task('serve', buildTasks, function () {
     // When pages change recompile page
     gulp.watch(paths.app.html, ['app-html']);
 
+    // When runtime change recompile js
+    gulp.watch(paths.app.runtime, ['app-runtime']);
+
 });
 
 // Rerun the task when a file changes

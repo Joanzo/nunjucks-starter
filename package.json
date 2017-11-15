@@ -29,6 +29,7 @@
     "metismenu": "^2.7.0",
     "morris.js.so": "^0.5.1",
     "nprogress": "^0.2.0",
+    "nunjucks": "^3.0.1",
     "popper.js": "^1.12.6",
     "quill": "0.20.1",
     "raphael": "^2.2.7",
@@ -47,10 +48,13 @@
     "gulp-data": "^1.2.1",
     "gulp-merge-json": "^1.2.0",
     "gulp-notify": "^3.0.0",
+    "gulp-nunjucks": "^3.0.0",
     "gulp-nunjucks-render": "^2.2.1",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.1",
     "gulp-tap": "^1.0.1",
+    "gulp-util": "^3.0.8",
     "run-sequence": "^2.2.0"
   },
   "scripts": {

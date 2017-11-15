@@ -27,8 +27,6 @@ const loadTasks = (gulp, paths) => {
   return taskNames;
 }
 
-
-
 const getDirectoriesRecursive = (srcpath) => {
   const flatten = (lists) => {
     return lists.reduce(function(a, b) {

@@ -5,7 +5,8 @@
     "layoutWrapper": "_layout-wrapper.njk",
     "header": "header-default.njk",
     "sidebarPrimary": "sidebar-default.njk",
-    "sidebarSecondary": "sidebar-default.njk"
+    "sidebarSecondary": "sidebar-default.njk",
+    "runtimeTemplates": true
   },
   "paths": {
     "base": "",

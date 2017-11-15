@@ -74,6 +74,7 @@ var utils = require('../utils/utils');
 
   exports.html = config.srcDir + '/**/*.{njk,json}';
 
+  exports.runtime = config.srcDir + '/**/*.html';
 
 /***********************************************
 *   Application asset files
